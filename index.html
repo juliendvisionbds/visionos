@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VisionBDS — Marketing OS</title>
+<style>
+:root{--ink:#172c2c;--muted:#647572;--green:#145949;--lime:#dbf599;--paper:#f5f6ef;--line:#dce3d8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1240px;margin:0 auto;padding:40px 32px 80px}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:32px}
+.logo{font-size:28px;letter-spacing:-2px;font-weight:800}.logo span{color:#688c42}
+.version{font-size:12px;color:var(--muted)}
+header{background:var(--green);color:#fff;border-radius:24px;padding:48px;position:relative;overflow:hidden;margin-bottom:40px}
+header:after{content:'OS';position:absolute;right:30px;top:-30px;font-size:210px;line-height:1;font-weight:800;opacity:.07;pointer-events:none}
+.eyebrow{text-transform:uppercase;font-size:11px;font-weight:750;letter-spacing:2px;color:#bde78c}
+h1{font-size:clamp(32px,4vw,54px);line-height:1.08;letter-spacing:-2px;max-width:720px;margin:18px 0}
+header p{max-width:680px;color:#e2ece3;font-size:18px;margin:0}
+.progress{display:flex;align-items:center;gap:14px;margin-top:30px;font-size:13px;color:#c6d6cb}
+.bar{flex:0 0 220px;height:6px;background:rgba(255,255,255,.15);border-radius:6px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--lime);border-radius:6px}
+.section-head{display:flex;justify-content:space-between;align-items:baseline;margin:0 0 18px}
+h2{font-size:24px;letter-spacing:-.6px;margin:0}
+.subtle{color:var(--muted);font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card{display:flex;flex-direction:column;min-height:230px;padding:26px;background:#fff;border:1px solid var(--line);border-radius:18px;position:relative;transition:transform .15s,box-shadow .15s,border-color .15s}
+.card .no{font-size:11px;font-weight:800;letter-spacing:2px;color:#66844f}
+.card h3{font-size:21px;line-height:1.25;letter-spacing:-.4px;margin:12px 0 8px}
+.card p{font-size:14px;color:#51655d;margin:0}
+.card .foot{margin-top:auto;padding-top:20px;display:flex;justify-content:space-between;align-items:center}
+.tag{display:inline-block;border-radius:50px;padding:4px 10px;font-size:11px;font-weight:700}
+.tag.ready{background:#dbefeb;color:#216555}
+.tag.soon{background:#edf2e7;color:#7a8a80}
+.arrow{font-size:20px;color:var(--green);transition:transform .15s}
+a.card.live{background:#e4efca;border-color:#d2e1b4}
+a.card.live:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(20,89,73,.12);border-color:#a5c177}
+a.card.live:hover .arrow{transform:translateX(4px)}
+a.card.live:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+.card.locked{opacity:.72}
+.card.locked h3{color:#3d5149}
+footer{margin-top:56px;padding-top:24px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+@media(max-width:1000px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.wrap{padding:20px 16px 60px}header{padding:30px 22px}header:after{font-size:130px}.grid{grid-template-columns:1fr}.card{min-height:0}.bar{flex-basis:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div class="logo">vision<span>●</span></div>
+    <div class="version">Marketing OS · V1.0 · 28.09.2026</div>
+  </div>
+
+  <header>
+    <div class="eyebrow">VisionBDS · Marketing OS</div>
+    <h1>Le système qui guide chaque décision marketing.</h1>
+    <p>Les documents de référence qui définissent à qui l’on vend, ce que l’on dit et comment l’on avance. Chaque module s’appuie sur le précédent.</p>
+    <div class="progress"><div class="bar"><i style="width:12.5%"></i></div><span>1 module sur 8 disponible</span></div>
+  </header>
+
+  <div class="section-head">
+    <h2>Modules</h2>
+    <span class="subtle">Commencer par l’ICP</span>
+  </div>
+
+  <div class="grid">
+    <a class="card live" href="modules/icp.html">
+      <span class="no">01 / FONDATION</span>
+      <h3>Profil client idéal</h3>
+      <p>PME du bâtiment de 20 à 80 salariés : segments, comité d’achat, douleurs, déclencheurs et grille de qualification.</p>
+      <div class="foot"><span class="tag ready">Disponible</span><span class="arrow">→</span></div>
+    </a>
+
+    <div class="card locked">
+      <span class="no">02 / FONDATION</span>
+      <h3>Positionnement & proposition de valeur</h3>
+      <p>Ce qui distingue VisionBDS face au statu quo, au recrutement, à l’ERP ou au freelance.</p>
+      <div class="foot"><span class="tag soon">À venir</span></div>
+    </div>
+
+    <div class="card locked">
+      <span class="no">03 / FONDATION</span>
+      <h3>Messages & vocabulaire</h3>
+      <p>Promesse, piliers de message et réponses aux objections, dans les mots du terrain.</p>
+      <div class="foot"><span class="tag soon">À venir</span></div>
+    </div>
+
+    <div class="card locked">
+      <span class="no">04 / OFFRE</span>
+      <h3>Offre & packaging</h3>
+      <p>Diagnostic, missions, maintenance : périmètres, livrables et logique de prix.</p>
+      <div class="foot"><span class="tag soon">À venir</span></div>
+    </div>
+
+    <div class="card locked">
+      <span class="no">05 / PREUVES</span>
+      <h3>Cas clients & preuves</h3>
+      <p>Avant / après mesurés, méthodologie des gains et témoignages validés.</p>
+      <div class="foot"><span class="tag soon">À venir</span></div>
+    </div>
+
+    <div class="card locked">
+      <span class="no">06 / ACQUISITION</span>
+      <h3>Canaux & stratégie d’acquisition</h3>
+      <p>Réseau, outbound, partenariats, contenus : où trouver l’ICP et dans quel ordre.</p>
+      <div class="foot"><span class="tag soon">À venir</span></div>
+    </div>
+
+    <div class="card locked">
+      <span class="no">07 / ACQUISITION</span>
+      <h3>Contenus & séquences</h3>
+      <p>Plan éditorial, séquences de prospection et supports de rendez-vous.</p>
+      <div class="foot"><span class="tag soon">À venir</span></div>
+    </div>
+
+    <div class="card locked">
+      <span class="no">08 / PILOTAGE</span>
+      <h3>Pipeline & indicateurs</h3>
+      <p>Étapes du cycle de vente, taux de conversion et tableau de bord mensuel.</p>
+      <div class="foot"><span class="tag soon">À venir</span></div>
+    </div>
+  </div>
+
+  <footer>VisionBDS · Marketing OS · Document de travail confidentiel</footer>
+</div>
+</body>
+</html>
